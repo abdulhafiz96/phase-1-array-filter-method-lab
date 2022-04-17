@@ -24,4 +24,6 @@ const drivers = [
 const findMatching = (arr, str) => arr.filter(a => a.toUpperCase() == str.toUpperCase())
 const fuzzyMatch = (arr, str) => arr.filter(a => a[0] == str[0])
 const matchName = (arr, str) => arr.filter((a => a.name == str))
-console.log(matchName(drivers, "Bobby"))
+console.log(findMatching(driversArr, "Bobby"))
+console.log(fuzzyMatch(driversArr, "A"))
+console.log(matchName(drivers, "Sally"))
